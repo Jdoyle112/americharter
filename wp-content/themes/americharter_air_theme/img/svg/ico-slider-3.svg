@@ -1,0 +1,23 @@
+<svg version="1.1"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+	 x="0px" y="0px" width="104px" height="104px" viewBox="0 0 104 104" overflow="visible" enable-background="new 0 0 104 104"
+	 xml:space="preserve" fill="#ffffff">
+<defs>
+</defs>
+<g>
+	<defs>
+		<rect id="SVGID_1_" width="104" height="104"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  overflow="visible"/>
+	</clipPath>
+	
+		<circle clip-path="url(#SVGID_2_)" fill="none" stroke="#ffffff" stroke-width="3" stroke-miterlimit="10" cx="52" cy="52" r="50.5"/>
+	<path clip-path="url(#SVGID_2_)" d="M69.415,33.028v36.832l-3.299,3.992H38.651l-3.311-3.992V33.028l3.311-2.88h27.465
+		L69.415,33.028z M65.71,36.815H39.044v27.407H65.71V36.815z M50.482,53.055l-6.579-4.563l-1.461,2.107l6.58,4.562L50.482,53.055z
+		 M57.812,38.116L46.972,53.744l2.106,1.461l10.839-15.628L57.812,38.116z M56.821,56.815H42.747v2.222h14.074V56.815z
+		 M62.007,59.778H42.748V62h19.259V59.778z M66.452,24.964H38.303v3.703h28.149V24.964z M64.477,19.038H40.538l-1.767,5.185h27.474
+		L64.477,19.038z M66.452,75.334H38.303v3.703h28.149V75.334z M66.202,79.778H38.771l1.763,5.185h23.904L66.202,79.778z M34.6,41.26
+		h-1.481v9.63H34.6V41.26z M34.6,56.815h-1.481V62H34.6V56.815z M71.637,42.001h-1.48v5.926h1.48V42.001z"/>
+</g>
+</svg>

@@ -1,0 +1,1482 @@
+/*
+Theme Name: Americharter Air
+Description: Template developed for americharter
+Author: Hugo Andrade
+Author URI: http://www.hugoandrade.com.br
+Version: 1.0
+*/
+
+@charset "UTF-8";
+
+/* CSS Document */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding:0 30px;
+  margin:0 auto;
+}
+
+h1 {
+  font-size: 81px;
+  font-family: 'ralewayextralight';
+  margin-bottom: 50px;
+}
+h2 {
+  font-size: 52px;
+  font-family: 'ralewayextralight';
+  margin-bottom: 50px;
+}
+h3 {
+  font-size: 44px;
+  font-family: 'ralewaythin';
+}
+
+h4 {
+  font-size: 26px;
+  font-family: 'ralewayextralight';
+  margin-bottom: 50px;
+}
+
+p {
+  font-size: 16px;
+  font-family: 'ralewayextralight';
+  line-height: 1.5;
+  padding-bottom: 15px;
+}
+
+
+.btn-standard {
+  display: block;
+  width: 190px;
+  height: 51px;
+  margin-top: 70px;
+  font-family: 'ralewayregular';
+  font-size: 17px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  color: #212424;
+  border:1px solid #212424;
+}
+
+.box-opacity {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+ 
+
+/*HEADER MAIN*/
+.header-main {
+  width: 100%;
+  height: 80px;
+  padding: 15px 0;
+  position: absolute;
+  z-index: 99;
+}
+
+.americharter-logo-mobile {
+    display: none;
+  width: 317px;
+  float: left;
+  position: fixed;
+    top: 0;
+    margin-top: 15px;
+}
+
+.americharter-logo {
+  width: 317px;
+  float: left;
+  position: fixed;
+    top: 0;
+    margin-top: 15px;
+}
+
+  /*NEVEGATION*/
+  .nav-main {
+   float: right;
+   line-height: 50px;
+   margin:30px 0 0 0;
+   position: relative;
+  }
+
+  .nav-main-phone {
+    position: absolute;
+    right: 15px;
+    font-size: 1.4em;
+    opacity: 0.5;
+    top: -35px;
+  }
+
+@media screen and (max-width: 1000px) {
+    .nav-main-phone {
+    display: none;
+  }
+}
+
+  .nav-main .ico-menu {
+    display: none;
+    float: right;
+    width: 30px;
+    cursor: pointer;
+  }
+  .nav-main .ico-menu:hover {
+    border:none;
+  }
+  .nav-main .ico-menu img {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .nav-main ul li {
+    float: left;
+    width: 120px;
+    text-align: center;
+  }
+
+  .nav-main a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+    /*padding:0 25px;*/
+    display: block;
+    opacity: 0.5;
+    transition: opacity 1s, font-size 1s;
+  }
+  .nav-main a:hover, .nav-main .current-menu-item a {
+    /*border-bottom: 2px solid #fff;*/
+    opacity: 1;
+    font-size: 20px;
+  }
+  /*END NAVEGATION*/
+
+/*END HEADER MAIN*/
+
+/*FOOTER*/
+footer {
+  float: left;
+  width: 100%;
+  background: #000;
+  font-size: 11px;
+  color: #575757;
+  padding: 10px 0;
+  font-family: arial;
+}
+footer p {
+  font-size: 11px;
+  font-family: arial;
+  text-align: center;
+}
+footer .nav-footer {
+  float: left;
+}
+footer .nav-footer a {
+  color: #575757;
+  text-decoration: none;
+  line-height: 32px;
+}
+footer .marcas-footer {
+  float: right;
+  margin-bottom: 10px;
+}
+footer .marcas-footer li {
+  float: left;
+  margin-left: 50px;
+}
+footer address {
+  float: left;
+}
+footer .copyright {
+  float: right;
+  padding:0;
+}
+/*END FOOTER*/
+
+.slide-home {
+  height: 1200px;
+  /*height: 900px;*/
+}
+.bxslider {
+  width: 100%;
+}
+.bxslider li {
+  width: 100%;
+  height: 1200px;
+  padding: 150px 0 0 0;
+  background-size: 100% !important;
+  background-repeat: no-repeat !important;
+}
+.bxslider li h1 {
+  font-size: 120px
+}
+.bxslider li h4 {
+  line-height: 50px;
+}
+.bxslider li.slide1 h1, .bxslider li.slide1 h4, .bxslider li.slide4 h1, .bxslider li.slide4 h4{
+  width: 100%;
+  max-width:700px;
+}
+.bxslider li.slide2 h1, .bxslider li.slide2 h4{
+  width: 100%;
+  text-align: center;
+}
+.bxslider li.slide3 h1, .bxslider li.slide3 h4{
+  width: 100%;
+  max-width:700px;
+  float: right;
+  text-align: right;
+}
+.bx-pager {
+  position: relative;
+  width: 560px;
+  height: 85px;
+  margin: -500px auto 0 auto;
+  z-index: 99;
+}
+.bx-pager a {
+  float: left;
+  display: block;
+  margin: 0 5px;
+  width: 80px;
+  height: 80px;
+  opacity: 0.5;
+  transition: opacity 1s;
+}
+.bx-pager a.active{
+  opacity: 1;
+}
+.bx-pager a img {
+  /*width: 100%;*/
+
+    width: 80%;
+    margin: 10px;
+}
+.bx-pager span {
+  float: left;
+  display: block;
+  line-height: 85px;
+  color: #fff;
+  font-size: 21px;
+}
+
+.bx-controls-direction {
+  display: none;
+}
+
+.text-home {
+  padding-bottom: 50px;
+}
+
+.header-page {
+  width: 100%;
+  height: 300px;
+  /*background-attachment: fixed !important;*/
+  overflow: hidden;
+  position: relative;
+}
+
+.header-page img {
+  position: absolute;
+  bottom:0;
+  left: 0;
+  top: 0;
+  /*height: 100%;*/
+}
+
+.header-page.quote img, .header-page.fleet img, .header-page.contact-us img  {
+  top: -100px;
+}
+
+.header-page .container {
+  position: relative;
+  padding-top: 160px;
+}
+
+.header-page .box-opacity {
+  /*background:  rgba(0, 0, 0, 0.2);*/
+  position: absolute;
+}
+
+/*.header-page.contact-us {
+  background: url(img/temp/bg-header-contact-us.jpg) top center;
+}
+.header-page.one-way {
+  background: url(img/temp/bg-header-one-way.jpg) top center;
+}*/
+/*.header-page.services {
+  background: url(img/temp/bg-header-services.jpg) top center;
+}*/
+/*.header-page.quote {
+  background: url(img/temp/bg-header-quote.jpg) top center;
+}*/
+/*.header-page.fleet {
+  background: url(img/temp/bg-header-fleet.jpg) top center;
+}*/
+
+/*CONTACT US*/
+.section-contact-us {
+  padding: 80px 0 20px 0;
+}
+.section-contact-us article .map-contact {
+  margin:0 0 50px 50px;
+  width: 70%;
+  height: auto;
+  float: right;
+}
+.section-contact-us article .map-contact iframe {
+  width: 100%;
+  height: 400px;
+}
+.section-contact-us article p {margin-bottom: 20px;}
+
+/*Contact Form*/
+.contactform{
+  margin: 0 auto;
+  max-width: 750px;
+  padding: 20px 10px;
+  float:right;
+  margin-top: -320px;
+}
+.inputform {
+  float: left;
+  width: 48%;
+  padding: 0 1% 20px;
+  position: relative;
+}
+
+
+.inputtxt {
+  float: left;
+  width: 96%;
+  padding: 0 1% 20px;
+  position: relative;
+}
+
+.inputtxt textarea {
+  padding-top: 10px;
+  padding-bottom: 9px;
+  border: none;
+  font-size: 16px;
+  font-weight: 100;
+}
+
+.inputtxt textarea {
+  width: 97%;
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+  font-family: arial;
+}
+
+
+.inputtxt label {
+  display: block;
+  padding-bottom: 5px;
+  color: #252a2e;
+}
+
+.inputform label {
+  display: block;
+  padding-bottom: 5px;
+  color: #252a2e;
+}
+
+.inputform input,
+.inputform textarea {
+  padding-top: 10px;
+  padding-bottom: 9px;
+  border: none;
+  font-size: 16px;
+  font-weight: 100;
+}
+ 
+.inputform input {
+  width: 94%;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+ 
+.inputform textarea {
+  width: 97%;
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+}
+.buttons {
+  clear: both;
+  margin: 0 1%;
+  padding-top: 20px;
+  border-top: 1px solid #f2f2f2;
+}
+
+.btn-submit input[type="submit"] {
+    float: left;
+    border: none;
+    height: 40px;
+    line-height: 1;
+    font-size: 18px;
+    padding: 0 15px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #888;
+    transition: all 300ms ease-in-out;
+    clear: both;
+    margin: 8px;
+}
+
+.btn-submit input[type="submit"]:hover {
+  color: #888;
+  background-color: #fff;
+}
+/*END CONTACT*/
+
+.container article a{
+  color: #fff;
+}
+
+
+/*ONE WAY*/
+.section-one-way {
+  padding: 80px 0 20px 0;
+  /*background: #fff;*/
+  /*color: #000;*/
+
+  background: #000;
+  color: #fff;
+}
+.footer-one-way {
+  width: 100%;
+  height: 530px;
+  background: url(img/temp/bg-bottom-one-way.jpg) center center;
+}
+
+/
+/*END ONE WAY*/
+
+/*SERVICES*/
+.section-services {
+  padding: 80px 0 20px 0;
+}
+.section-services .clearfix {
+  float: left;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.section-services .aligncenter {
+  width: 100%;
+  height: auto;
+  margin: 20px 0;
+}
+/*END SERVICES*/
+
+/*QUOTES*/
+.section-quote {
+  padding: 80px 0 20px 0;
+  font-size: 16px;
+}
+.section-quote p {
+  padding-bottom: 10px !important;
+}
+.section-quote .left {
+  float: left;
+  width: 580px;
+  margin-right: 50px;
+}
+.section-quote .right {
+  float: left;
+  width: 500px;
+}
+.section-quote .box-form {
+  float: left;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.section-quote .box-form p {
+  font-size: 20px;
+}
+
+.section-quote .info-dates input{
+  max-width: 200px;
+  display: inline-block;
+}
+
+.section-quote .info-dates h3{
+  display: inline-block;
+  font-size: 1em;
+  max-width: 200px;
+}
+
+.section-quote .info-dates span{
+  font-size: 0.6em;
+}
+
+
+.section-quote .box-form label {
+  display: block;
+  margin-bottom: 20px;
+}
+.section-quote .box-form label.radio {
+  margin:0 20px 10px 0;
+  float: left;
+}
+
+.section-quote .box-form label input[type="text"], .section-quote .box-form label input[type="tel"], .section-quote .box-form label input[type="email"], .section-quote .box-form label input[type="date"] {
+  height: 35px;
+  line-height: 35px;
+  border:2px solid #ddd;
+  padding:0 5px;
+}
+
+.section-quote .box-form select {
+  height: 35px;
+  line-height: 35px;
+  border:2px solid #ddd;
+  border-radius:0;
+  padding:0 5px;
+  appearance:none;
+  -moz-appearance:none; /* Firefox */
+  -webkit-appearance:none; /* Safari and Chrome */
+  background: url(img/ico-select.jpg) #fff no-repeat 96% 50%;
+}
+
+.section-quote .info-contact label {
+  width: 100%;
+  float: left;
+  line-height: 35px;
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+.section-quote .info-contact label input {
+  width: 360px;
+  float: right;
+}
+.section-quote  .info-passanger {
+  font-size: 20px;
+  width: 411px;
+}
+.section-quote  .info-passanger label {
+  float: left;
+  width: 100%;
+  margin-bottom: 5px;
+}
+.section-quote  .info-passanger select {
+  margin-left: 20px;
+}
+.section-quote  .info-passanger .passanger-number {
+  width: 60px;
+}
+.section-quote  .info-passanger .passanger-from2 {
+  width: 150px;
+floar: right;
+}
+    .from-to{
+  float: left;
+  width: 100%;
+  margin-bottom: 11px;
+    }
+    .from-to label{  
+    float: left;
+    }
+    .from-to label input{ 
+    width: 180px;
+    float: right;
+    height: 35px;
+    line-height: 35px;
+    border: 2px solid #ddd;
+    padding: 0 5px;
+    margin-right: 5px;
+    }
+
+
+.section-quote  .info-passanger .passanger-from, .section-quote  .info-passanger .passanger-to {
+  width: 290px;
+  float: right;
+}
+
+.section-quote .info-dates .select-date {
+  width: 150px;
+  margin:0 20px 0 10px;
+}
+
+.section-quote .coments-form {
+  width: 500px;
+  height: 120px;
+  border:2px solid #ddd;
+  font-family: arial;
+}
+
+.section-quote .info-about .wpcf7-list-item {
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+}
+
+span.wpcf7-list-item {
+  margin-left: 0 !important;
+  margin-right: 30px;
+  font-size: 16px;
+  display: inline-block;
+}
+
+.box-form h2, .from-to h2 {
+  display: inline;
+  font-size: 1em;
+}
+
+.box-form input[type="text"], .box-form input[type="email"], .box-form input[type="tel"], .from-to input[type="text"] {
+  height: 40px;
+  padding: 0 0 0 10px;
+  margin-top: 10px;
+}
+
+.from-to {
+  margin-bottom: 40px;
+}
+
+
+/*END QUOTE*/
+
+/*FLEET*/
+.section-fleet {
+  padding: 80px 0 20px 0;
+}
+
+.section-fleet .nav-list-flets {
+  width: 100%;
+  text-align: center;
+}
+.section-fleet .nav-list-flets li {
+  display: inline-block;
+  font-size: 18px;
+  font-family: 'ralewayregular';
+  border: 1px solid #000;
+  padding:10px;
+  margin:5px;
+  cursor: pointer;
+  transition: border 1s;
+}
+.section-fleet .nav-list-flets li.active {
+  border-color: #fff;
+}
+
+.content-list-fleets {
+  width: 100%;
+}
+.content-list-fleets .fleets {
+  display: none;
+  transition: display 1s;
+}
+.content-list-fleets .fleets.active {
+  display: block;
+}
+
+.list-fleet {
+  width: 100%;
+  float: left;
+  margin-top: 60px;
+}
+
+.single-fleet {
+  width: 100%;
+  float: left;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #333;
+}
+
+.single-fleet .widget-imgs {
+  width: 610px;
+  float: left;
+  margin:0 50px 0 0;
+}
+
+.single-fleet figure {
+  margin:0;
+  float: left;
+  height: 425px;
+  width: 610px;
+  overflow: hidden;
+}
+.single-fleet figure img {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 2s;
+}
+.single-fleet figure img.active {
+  opacity: 1;
+}
+
+.single-fleet .thumbs {
+  float: left;
+  margin-top: 25px;
+}
+.single-fleet .thumbs img {
+  float: left;
+  margin:0 20px 0 0;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 1s;
+}
+.single-fleet .thumbs img.active {
+  opacity: 1;
+}
+
+.single-fleet .thumbs img:last-child {
+  margin-right: 0;
+}
+
+.single-fleet .info-fleets {
+  width: 480px;
+  float: left;
+}
+
+.single-fleet .info-fleets h2 {
+  font-size: 58px;
+  font-family: 'ralewayregular';
+}
+.single-fleet .info-fleets p {
+  font-size: 20px;
+  /*padding-bottom: 35px;*/
+}
+
+.single-fleet:nth-child(odd) figure{
+  border-left: 10px solid #bebebe;
+}
+
+.single-fleet:nth-child(even) .widget-imgs {
+  float: right;
+  margin:0 0 0 50px;
+}
+.single-fleet:nth-child(even) figure{
+  border-right: 10px solid #bebebe;
+}
+.single-fleet:nth-child(even) .info-fleets {
+  float: left;
+}
+
+
+@media only screen and (max-width : 1440px) {
+    
+  h1 {
+    font-size: 70px;
+  }
+
+  .container {
+    max-width: 100%;
+  }
+  
+  .americharter-logo {
+    width: 317px;
+    margin-top: 5px;
+    /**/
+    position: fixed;
+    top: 0;
+    margin-top: 15px;
+  }
+
+  .slide-home {
+    height: 830px
+  }
+  .bxslider li {
+    height: 830px
+  }
+  
+  .bxslider li h1 {
+    font-size: 90px;
+  }
+
+
+  .bx-pager {
+    width: 540px;
+    height: 75px;
+    margin: -280px auto 0 auto;
+  }
+  .bx-pager a {
+    width: 75px;
+    height: 80px;
+  }
+
+  .header-page.services img {
+    left: -400px;
+  }
+
+  .header-page.fleet img {
+   left: -200px; 
+  }
+
+/*contact form*/
+  .contactform{
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 20px 10px;
+  float:right;
+  margin-top: -320px;
+}
+.inputform {
+  float: left;
+  width: 48%;
+  padding: 0 1% 20px;
+  position: relative;
+}
+
+.inputtxt {
+  float: left;
+  width: 96%;
+  padding: 0 1% 20px;
+  position: relative;
+}
+
+.inputtxt textarea {
+  padding-top: 10px;
+  padding-bottom: 9px;
+  border: none;
+  font-size: 16px;
+  font-weight: 100;
+}
+
+.inputtxt textarea {
+  width: 96%;
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+}
+
+.inputform label {
+  display: block;
+  padding-bottom: 5px;
+  color: #252a2e;
+}
+
+.inputform input,
+.inputform textarea {
+  padding-top: 10px;
+  padding-bottom: 9px;
+  border: none;
+  font-size: 16px;
+  font-weight: 100;
+}
+ 
+.inputform input {
+  width: 94%;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+ 
+.inputform textarea {
+  width: 97%;
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+}
+}
+
+
+@media only screen and (max-width : 1280px) {
+  .slide-home {
+    height: 775px
+  }
+  .bxslider li {
+    height: 775px
+  }
+
+  .bx-pager {
+    margin: -200px auto 0 auto;
+  }
+}
+
+@media only screen and (max-width : 1024px) {
+  .americharter-logo {
+    width: 250px;
+    margin-top: 5px;
+  }
+
+  .bx-pager {
+    margin: -160px auto 0 auto;
+  }
+  
+  .nav-main a {
+    font-size: 16px;
+  }
+  .nav-main a:hover, .nav-main .current-menu-item a {
+    font-size: 18px;
+  }
+
+  .header-page.services img {
+    left: -600px;
+  }
+  .header-page.fleet img {
+   left: -400px; 
+  }
+
+  .single-fleet .widget-imgs {
+    width: 510px;
+    margin-right: 30px;
+  }
+  .single-fleet:nth-child(even) .widget-imgs {
+    margin-left: 30px;
+  }
+
+  .single-fleet figure {
+    width: 510px;
+    height: 355px;
+  }
+  .single-fleet figure img {
+    width: 500px;
+    height: auto;
+  }
+
+  .single-fleet .info-fleets {
+    width: 400px;
+    float: right;
+  }
+
+  .single-fleet .thumbs img {
+    width: 32%;
+    margin-right: 2%;
+    height: auto;
+  }
+
+/*Contact form*/
+  .contactform{
+  margin: 0 auto;
+  max-width: 820px;
+  padding: 20px 10px;
+  float:right;
+  margin-top: -320px;
+}
+.inputform {
+  float: left;
+  width: 48%;
+  padding: 0 1% 20px;
+  position: relative;
+}
+
+.inputtxt {
+  float: left;
+  width: 96%;
+  padding: 0 1% 20px;
+  position: relative;
+}
+
+.inputtxt textarea {
+  padding-top: 10px;
+  padding-bottom: 9px;
+  border: none;
+  font-size: 16px;
+  font-weight: 100;
+}
+
+.inputtxt textarea {
+  width: 96%;
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+}
+.inputtxt label {
+  display: block;
+  padding-bottom: 5px;
+  color: #fff;
+}
+
+.inputtxt input,
+.inputtxt textarea {
+  padding-top: 10px;
+  padding-bottom: 9px;
+  border: none;
+  font-size: 16px;
+  font-weight: 100;
+}
+
+.inputform label {
+  display: block;
+  padding-bottom: 5px;
+  color: #252a2e;
+}
+
+.inputform input,
+.inputform textarea {
+  padding-top: 10px;
+  padding-bottom: 9px;
+  border: none;
+  font-size: 16px;
+  font-weight: 100;
+}
+ 
+.inputform input {
+  width: 94%;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+ 
+.inputform textarea {
+  width: 97%;
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+}
+
+}
+
+
+@media only screen and (max-width : 1000px) {
+  
+  .nav-main {
+    margin: 15px 0 0 0;
+  }
+  .nav-main .ico-menu {
+    display: block;
+    opacity: 1;
+  }
+  .nav-main ul {
+    display: none;
+    position: absolute;
+    width: 140px;
+    right: 0;
+    top: 80px;
+    background:  rgba(0, 0, 0, 0.8);
+    padding: 0 20px 0 0;
+  }
+    
+
+
+.americharter-logo-mobile {
+    display: block;
+  width: 317px;
+  float: left;
+  position: fixed;
+    top: 0;
+    margin-top: 15px;
+}
+
+.americharter-logo {
+    display: none;
+  width: 317px;
+  float: left;
+  position: fixed;
+    top: 0;
+    margin-top: 15px;
+}
+    
+  .nav-main ul.active {
+    display: block;
+  }
+  .nav-main ul li {
+    float: right;
+    text-align: right;
+  }
+  .nav-main a, .nav-main a:hover, .nav-main .current-menu-item a {
+    opacity: 1;
+    font-size: 18px;
+  }
+  footer address {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  footer .copyright {
+    float: left;
+  }
+
+  .slide-home {
+    height: 720px
+  }
+  .bxslider li {
+   height: 720px 
+  }
+
+  .bxslider li h1 {
+    font-size: 72px
+  }
+
+  .bx-pager {
+    margin: -180px auto 0 auto;
+  }
+
+  .section-contact-us article .map-contact {
+    width: 100%;
+    margin:0 0 20px 0;
+    height: auto;
+    float: right;
+  }
+  .section-contact-us article .map-contact iframe {
+    width: 100%;
+    height: 300px;
+  }
+
+  .section-services img {
+    width: 100%;
+    height: auto;
+    margin:10px 0;
+  }
+
+  .section-fleet {
+    padding: 20px 0;
+  }
+
+
+  .single-fleet .widget-imgs, .single-fleet:nth-child(even) .widget-imgs{
+    float: none;
+    margin:0 auto 20px auto;
+  }
+
+  .single-fleet .info-fleets, .single-fleet:nth-child(even) .info-fleets {
+    width: 510px;
+    float: none;
+    margin:0 auto;
+  }
+
+/*Contact Form*/
+  .contactform{
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 20px 10px;
+  float:none !important;
+}
+.inputform {
+  float: left;
+  width: 48%;
+  padding: 0 1% 20px;
+  position: relative;
+}
+
+.inputform label {
+  display: block;
+  padding-bottom: 5px;
+  color: #252a2e;
+}
+
+.inputform input,
+.inputform textarea {
+  padding-top: 10px;
+  padding-bottom: 9px;
+  border: none;
+  font-size: 16px;
+  font-weight: 100;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+ 
+.inputform input {
+  width: 94%;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+ 
+.inputform textarea {
+  width: 97%;
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+}
+
+}
+
+@media only screen and (max-width : 650px) {
+  .section-quote .left {
+    width: 100%;
+    margin-right: 0px;
+  }
+  .section-quote .right {
+    width: 100%;
+  }
+
+  .bxslider li {
+    background-size: 200% !important;
+  }
+
+  .list-fleet {
+    width: 100%;
+    float: left;
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width : 560px) {
+  .americharter-logo {
+    width: 200px;
+    margin-top: 5px;
+  }
+    
+    
+.americharter-logo-mobile {
+    display: block;
+  width: 200px;
+  float: left;
+  position: fixed;
+    top: 0;
+    margin-top: 15px;
+}
+
+.americharter-logo {
+    display: none;
+  width: 317px;
+  float: left;
+  position: fixed;
+    top: 0;
+    margin-top: 15px;
+}
+  
+  .header-page .container {
+    padding-top: 0;
+  }
+  .header-page img {
+    width: 360%;
+    height: auto;
+    top: 0;
+  }
+
+  .header-page.services img {
+    left: -640px;
+  }
+
+  .header-page.fleet img {
+    left: -500px; 
+  }
+
+  .slide-home {
+    height: 600px;
+  }
+  .bxslider li {
+    background-size: 250% !important;
+    height: 600px;
+  }
+  .bx-pager {
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    margin: -170px auto 0 auto;
+  }
+  .bx-pager a {
+    width: 26%;
+    float: none;
+    margin: 0 37%;
+    position: absolute;
+    opacity: 0;
+  }
+  
+  .bx-pager span {
+    display: none;
+  }
+
+  .bx-controls-direction {
+    display: block;
+    position: absolute;
+    margin: -165px 0 0 0;
+    z-index: 999;
+    width: 100%;
+  }
+
+  .bx-controls-direction a {
+    position: absolute;
+    background: url(img/ico-prev.png) no-repeat;
+    outline: 0;
+    width: 40px;
+    height: 74px;
+    text-indent: -9999px;
+    z-index: 9999;
+    margin:0 20px;
+    opacity: 0.8;
+  }
+  .bx-controls-direction a:hover {
+    opacity: 1;
+  }
+  .bx-controls-direction a.bx-next {
+    right: 0;
+    text-indent: 9999px;
+    /* Safari */
+    -webkit-transform: rotate(-180deg);
+    /* Firefox */
+    -moz-transform: rotate(-180deg);
+    /* IE */
+    -ms-transform: rotate(-180deg);
+    /* Opera */
+    -o-transform: rotate(-180deg);
+  }
+
+  .single-fleet .info-fleets h2 {
+    font-size: 34px;
+  }
+  .single-fleet .info-fleets p {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width : 540px) {
+  .container {
+    padding:0 10px;
+  }
+  h1 {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+  h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  h3 {font-size: 25px;}
+
+  h4 {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  footer .marcas-footer {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  footer .marcas-footer li {
+    margin:0 50px 0 0;
+  }
+
+  .bxslider li h1 {
+    font-size: 45px
+  }
+  .bxslider li h4 {
+    line-height: 35px;
+  }
+  
+  .header-page{
+    height: 200px;
+    padding-top: 120px;
+  }
+  .header-page.quote img, .header-page.fleet img, .header-page.contact-us img  {
+    top: 0px;
+  }
+  .header-page.one-way {
+    padding-top: 100px;
+  }
+  .section-contact-us, .section-one-way, .section-services  {
+    padding: 40px 0 20px 0;
+  }
+  .section-contact-us article p {margin-bottom: 10px;}
+
+  .footer-one-way {
+    height: 310px;
+  }
+
+  .section-quote .info-passanger, .section-quote .info-contact label input, .section-quote .coments-form, .section-quote .box-form label.radio {
+    width: 100%;
+  }
+  .section-quote  .info-passanger .passanger-from, .section-quote  .info-passanger .passanger-to {
+    width: 100%;
+    margin: 10px 0;
+  }
+    .passanger-from2 .max-190{
+        margin: 0;
+    }
+  
+}
+
+@media only screen and (max-width : 380px) {
+  
+  .single-fleet .widget-imgs, .single-fleet:nth-child(even) .widget-imgs {
+    width: 100%;
+  }
+  
+  .single-fleet figure {
+    width: 100%;
+    height: 244px;
+  }
+  .single-fleet figure img {
+    width: 345px;
+  }
+
+  .single-fleet .widget-imgs .thumbs {
+    margin-top: 20px;
+  }
+
+  .single-fleet .info-fleets, .single-fleet:nth-child(even) .info-fleets {
+    width: 100%;
+    float: right;
+  }
+}
+
+@media only screen and (max-width : 320px) {
+  
+  .single-fleet .widget-imgs {
+    width: 100%;
+  }
+  
+  .single-fleet figure {
+    width: 100%;
+    height: 205px;
+  }
+  .single-fleet figure img {
+    width: 290px;
+  }
+
+  .single-fleet .widget-imgs .thumbs {
+    margin-top: 20px;
+  }
+
+}
+
+.header-phone-air {
+  position: absolute;
+  top: 45px;
+  right: 12%;
+  font-size: 1.125em;
+  opacity: 0.5;
+}
+
+.header-phone-air a{
+  color: #fff;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 1000px) {
+  .header-phone-air {
+  display: none;
+  }
+}
+}
+
+
+
+/* custom styles */
+
+
+.section-fleet { background-color: #fbfbfb !important; }
+
+.section-fleet { background-color: #fbfbfb !important; color: #252a2e !important; }
+.section-services { background-color: #fbfbfb !important; color: #252a2e !important; }
+.section-services h2 { font-size: 22px !important; }
+.section-services p { font-size: 16px !important; }
+
+.section-one-way { background-color: #fbfbfb !important; color: #252a2e !important; }
+
+.section-contact-us { background-color: #fbfbfb !important; color: #252a2e !important; }
+
+.col { float: left; width: 22%; margin: 20px 5.66%; }
+.col span input { width: 100%; }
+.quote-li span input { width: inherit !important; }
+.box-form .wrapper { clear: both; }
+.box-form .text-box { margin: 20px auto; float: none; width: 50%; text-align: center; }
+.box-form .btn-submit p { text-align: center; }
+.box-form .btn-submit p input { float: none; }
+.box-form .btn-submit p .ajax-loader { display: none; }
+.section-quote .coments-form { width: 100%; max-width: 500px; }
+
+.contact-form { padding-bottom: 20px; }
+.contact-form .contactform { margin: 0 auto !important; margin-top: 0 !important; float: none !important; }
+.contact-form .contactform .inputform input { width: 100% !important; }
+.contact-form .contactform .inputform { padding: 0 2% 20px !important; }
+.contact-form .contactform .inputtxt { width: 100% !important; padding: 0 2% 20px !important; }
+.contact-form .contactform .btn-submit { padding: 0 1% 20px !important; }
+
+.contactform { width: 70% !important; }
+.contactform .inputform input { border: 1px solid #252a2e; border-radius: 2px; }
+.contactform .inputtxt textarea { border: 1px solid #252a2e; border-radius: 2px; }
+
+header nav { line-height: 80px !important; margin: 0 !important; }
+header nav ul li a { color: #252a2e !important; font-size: 16px !important; }
+header .americharter-logo { position: initial !important; }
+header .americharter-logo-mobile { position: initial !important; }
+header .header-phone-air a { color: #252a2e !important; }
+header.header-main { position: fixed !important; background-color: #fcfcfc !important; padding: 0 !important;}
+
+
+footer { padding: 40px 0; background-color: #af4b4b !important; }
+footer p { color: white; font-size: 18px; text-align: left; color: #f5f5f5 !important;}
+.nav-footer { display: block; width: 80%; float: none !important; margin: 0 auto; }
+footer .col { float: left; width: 25%; margin: 0; }
+footer ul li a { font-size: 14px; color: #f5f5f5 !important;}
+@media only screen and (max-width: 800px){
+footer .col { width: 100% !important; margin: 30px 0 !important; }
+}
+
+section.text-home { background-color: #fcfcfc !important; color: #252a2e !important; padding: 50px 0 !important; }
+ 
